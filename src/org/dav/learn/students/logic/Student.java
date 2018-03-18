@@ -26,6 +26,8 @@ public class Student implements Comparable<Student>
 	// поле ГОД ОБУЧЕНИЯ
 	private int educationYear;
 	
+	public Student(){}
+	
 	public Student(ResultSet rs) throws SQLException
 	{
 		setStudentId(rs.getInt(1));

@@ -22,8 +22,10 @@ public class ManagementSystem
 	{
 		try
 		{
-			String url = "jdbc:mysql://192.168.0.62:3306/students";
-			con = DriverManager.getConnection(url, "dolodarenko", "luisiana969");
+			Class.forName("com.mysql.jdbc.Driver");
+			String url = "jdbc:mysql://localhost:3306/students"; //"jdbc:mysql://192.168.0.62:3306/students";
+			con = DriverManager.getConnection(url, "root", "luisiana969");
+			//con = DriverManager.getConnection(url, "dolodarenko", "luisiana969");
 		}
 		catch (SQLException e)
 		{
