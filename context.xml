@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/students">
+    <Resource
+            driverClassName="com.mysql.jdbc.Driver"
+            maxActive="4"
+            maxIdle="2"
+            maxWait="5000"
+            name="jdbc/StudentsDS"
+            username="dolodarenko"
+            password="luisiana969"
+            type="javax.sql.DataSource"
+            url="jdbc:mysql://192.168.0.62:3306/students"
+            validationQuery="SELECT 1">
+    </Resource>
+</Context>

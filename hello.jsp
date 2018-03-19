@@ -1,3 +1,5 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ taglib uri="/WEB-INF/hello.tld" prefix="jstlpg" %>
 <html>
     <head>
         <title>
@@ -7,17 +9,7 @@
 
     <body>
         <h1>
-            <%
-            String name = request.getParameter("name");
-            if (name == null || name.length() == 0) {
-            %>
-            Hello, world !
-            <%            } else {
-            %>
-            Hello, world ! I'm <%= name%>
-            <%
-            }
-            %>
+            <jstlpg:hello name='<%= request.getParameter("name") %>' />
         </h1>
     </body>
 </html>
